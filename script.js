@@ -1,5 +1,5 @@
 const camper = {
-    "campers": [
+    "camper": [
         {
             "# de Identificacion": 1093925253,
             "nombres": "Jaime",
@@ -351,7 +351,7 @@ const camper = {
             "nombre": "Area 1",
             "capacidad_maxima": 33,
             "ruta": "java",
-            "campers": [
+            "camper": [
                 {
                     "# de Identificacion": 1093925253,
                     "nombres": "Jaime",
@@ -1010,7 +1010,7 @@ const camper = {
             "nombre": "Area 2",
             "capacidad_maxima": 33,
             "ruta": "nodejs",
-            "campers": [
+            "camper": [
                 {
                     "# de Identificacion": 25489,
                     "nombres": "freiler",
@@ -1510,7 +1510,7 @@ const camper = {
             "nombre": "Area 2",
             "capacidad_maxima": 33,
             "ruta": null,
-            "campers": [],
+            "camper": [],
             "horarios": [
                 "6:00 pm - 10:00 pm"
             ]
@@ -1521,35 +1521,142 @@ const camper = {
 console.log(camper);
 
 function menu(){
-    console.log("BIENVENIDO, DESEAS INGRESAR COMO :")
-    console.log("1-Coordinador")
-    console.log("2-Estudiantes")
+    console.log("Bienvenido, cómo deseas ingresar?")
+    console.log("1. Coordinador")
+    console.log("2. camper")
 }
-var elg=console.log(prompt("Elige un perfil :"))
-
 menu()
 function coordinador(){
-    console.log("==MENÚ COORDINADOR==")
-    console.log("1-Registrar Camper")
-    console.log("2-Registrar Trainer")
-    console.log("3-Registar Coordinador")
-    console.log("4-Crear ruta de entrenamiento")
-    console.log("5-Registar notas de campers")
-    console.log("6-Registar notas de campers")
-    console.log("7-Asignar campers y traines a rutas")
-    console.log("8-Generar reportes")
-    console.log("9-Gestionar matriculas")
-    console.log("10-Seleccionar horario de trainers")
-    }
-var elg=console.log(prompt("Elige un perfil :"))
-if (elg==1){
-    console.log("MENÚ COORDINADOR")
-    coordinador()
-    let elg=prompt("elige una opción: ")
-    if (elg==1){
-        console.log("registrar campers")
-    }
+    console.log("1. Registrar camper")
+    console.log("2. Actualizar datos del nuevo camper")
+    console.log("3. Reporte camper inscritos")
+    console.log("4. Reporte de camper aprobados")
+    console.log("5. Estado de los camper")
+    console.log("6. camper con bajo rendimiento")
+    console.log("7. Agregar rutas de entrenamiento")
+    console.log("8. Asignar camper a la ruta de entrenamiento")
+    console.log("9. Agregar nuevos treiners")
+    console.log("10. Reporte de trainers trabajando")
+    console.log("11. Eliminar camper")
+    console.log("12. Eliminar treiners")
+    console.log("13. Eliminar rutas")
+    console.log("14. Salir del programa")
+    console.log("15. Volverr al menu principal")
+}
 
+function camper(){
+    console.log("---- Menu camper ----")
+    console.log("1. Revisar mis notas")
+    console.log("2. Salir del programa")
+}
+var opc=prompt("Elije la opción que deseas: ")
+
+if(opc==1){
+    console.clear()
+    console.log("---- Menu coordinador ----")
+    coordinador()
+    let opcion=prompt("Elije la opción que deseas")
+    if (opcion==1){
+        console.clear()
+        console.log("Registrar camper");
+    }
+    if (opcion==2){
+        console.clear()
+        console.log("Actualizar datos del nuevo camper")
+    }
+    if (opcion==3){
+        console.clear()
+        console.log("Reporte camper inscritos")
+    }
+    if (opcion==4){
+        console.clear()
+        console.log("Reporte de camper aprobados")
+    }
+    if (opcion==5){
+        console.clear()
+        console.log("Estado de los camper")
+    }
+    if (opcion==6){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==7){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==8){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==9){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==10){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==11){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==12){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==13){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==14){
+        console.clear()
+        console.log("camper con bajo rendimiento")
+    }
+    if (opcion==15){
+        console.clear()
+        console.log("Volver al menu principal")
+        menu()
+    }
+}
+if (opc==2){
+    console.clear()
+    console.log("---- Menu Trainers ----")
+    Trainers()
+    let opci=prompt("Elije la opción que deseas: ")
+    if (opci==1){
+        console.clear()
+        console.log("Estado de los camper")
+    }
+    if (opci==2){
+        console.clear()
+        console.log("Ruta de los trainers")
+    }
+    if (opci==3){
+        console.clear()
+        console.log("Reportes")
+    }
+    if (opci==4){
+        console.clear()
+        console.log("Salir del programa")
+        console.clear()
+        menu()
+    }
+}
+if (op==3){
+    console.clear()
+    console.log("---- Menu camper")
+    camper()
+    let opcio=prompt("Eile la opción que deseas: ")
+    if (opcio==1){
+        console.clear()
+        console.log("Revisar mi información")
+    }
+    if (opcio==2){
+        console.clear()
+        console.log("Salir del programa")
+        console.clear()
+        menu()
+    }
 }
 
 
