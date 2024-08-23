@@ -151,4 +151,5 @@ if (opciones == 4) {
     console.log("informacion_personal");
     nombre=prompt("Ingrese el nombre de la persona que desea actualizar ");
     
+    
 }
