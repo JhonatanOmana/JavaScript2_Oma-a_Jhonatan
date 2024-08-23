@@ -50,17 +50,13 @@ let json = [
         ]
     }
 ]
-
-
 console.log("======MENU======");
-console.log("1.ver\n" +
-    "2.agregar\n" +
-    "3.eliminar\n" +
-    "4.actualizar\n"
+console.log("1.Ver\n" +
+    "2.Agregar\n" +
+    "3.Eliminar\n" +
+    "4.Actualizar\n"
 );
-
-
-var opciones = prompt("Porfavor elije una ópcion")
+var opciones = prompt("Por favor elije una opción")
 
 if (opciones == 1) {
     for (i = 0; i < json.length; i++) {
@@ -68,43 +64,33 @@ if (opciones == 1) {
 
 
     }
-
 }
-
-
 if (opciones == 2) {
-
-
-    console.log(" bienvenido por favor ingresa informacion personal ");
-
-    var nombre = prompt("ingrese nombre")
-    var edad = prompt("ingresa la edad")
+    console.log(" Bienvenido por favor ingrese información personal ");
+    var nombre = prompt("Ingrese el nombre")
+    var edad = prompt("Ingrese la edad")
     console.log("datos de direccion");
-    var calle = prompt("ingresa la calle")
-    var numero = prompt(" numero de vivienda ")
-    var ciudad = prompt("ingresa la ciudad")
-    console.log("datos de contacto");
-    var correo = prompt("ingresa tu correo")
-    var telefono = prompt("ingresa tu telefono")
-
-    console.log("ingresa tu historial educativo");
-    var niveleducativo = prompt("ingresa tu nivel educativo")
-    var institucion = prompt("ingresa el instituto donde estudiaste")
-    var anioinicio = prompt("ingresa el año de inicio")
-    var aniofin = prompt("ingresa el año que finalizaste ")
-    var nivel = prompt(" ingresa tu nivel academico")
-    var institucion2 = prompt("nombre de la institucio")
-    var titulo = prompt("ingresa el titulo que optubiste")
-    var anio_in2 = prompt("ingresa el año de inicio")
-    var anio_fi2 = prompt("ingrisa el año de fin")
-
-
-    console.log("ingresa tu experiencia laboral");
-    var puesto = prompt("ingresa el puesto que has ejercido")
-    var empresa = prompt("ingresa el nombre de la empresa")
-    var periodo = prompt("ingresa el periodo dentro de la empresa")
-    var responsabilidades = prompt("ingresa tus responsabilidades en la empresa")
-
+    var calle = prompt("Ingrese la calle")
+    var numero = prompt(" Número de vivienda ")
+    var ciudad = prompt("Ingrese la ciudad")
+    console.log("Datos de contacto");
+    var correo = prompt("Ingresa tu correo")
+    var telefono = prompt("Ingresa tu telefono")
+    console.log("Ingresa tu historial educativo");
+    var niveleducativo = prompt("Ingresa tu nivel educativo")
+    var institucion = prompt("Ingrese el instituto donde estudió")
+    var anioinicio = prompt("Ingrese el año de inicio")
+    var aniofin = prompt("Ingresa el año en que finalizaste ")
+    var nivel = prompt("Ingresa tu nivel académico")
+    var institucion2 = prompt("Nombre de la institución")
+    var titulo = prompt("Ingrese el titulo que obtuviste")
+    var anio_in2 = prompt("Ingrese el año de inicio")
+    var anio_fi2 = prompt("ingrisa el año de finalización ")
+    console.log("Ingresa tu experiencia laboral");
+    var puesto = prompt("Ingresa el puesto que has ejercido")
+    var empresa = prompt("Ingresa el nombre de la empresa")
+    var periodo = prompt("Ingresa el periodo dentro de la empresa")
+    var responsabilidades = prompt("Ingrese tus responsabilidades en la empresa")
     var nuevoempleado = {
         "informacion_personal": [
             {
@@ -149,29 +135,20 @@ if (opciones == 2) {
 
         ]
     }
-
     json.push(nuevoempleado)
-
     console.log(json);
-
 }
-
-
 if (opciones == 3) {
-    
-    function eliminar (json,elemento){
-        var resultado = []
-        for (i = 0; i < json.length; i++) {
-            if(json[i]!==elemento){
-                resultado.push(json[i]);
-            }
-            
-        }
+
+    console.clear()
+    console.log("Eliminar información ");
+    json[0]["informacion_personal"].pop();
+    console.log(json);
     }
-    return resultado
-}
 
 if (opciones == 4) {
-    console.log();
-
+    console.clear()
+    console.log("informacion_personal");
+    nombre=prompt("Ingrese el nombre de la persona que desea actualizar ");
+    
 }
