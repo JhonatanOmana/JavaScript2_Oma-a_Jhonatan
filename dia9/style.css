@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap&#39');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Oxanium', cursive;
+}
+.pokedex{
+    position: absolute;
+    left: 33vw;
+    top: 8vw;
+    width: 34.5vw;
+    height: 52vw;
+}
+.contenedor{
+    width: 100vw;
+    height: 70vw;
+    background: linear-gradient(#6eb9f5,#ffffff);
+}
+#Find{
+    box-shadow: -3px 5px rgba(93, 93, 93), -5px 7px 2px #333;
+    border-radius: 0.5vw;
+    position: absolute;
+    left: 37vw;
+    top: 43vw;
+    width: 24vw;
+    height: 3.5vw;
+    border: 0.20vw solid #333;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+}
+.pre{
+    position: absolute;
+    left: 37vw;
+    top: 52vw;
+    width: 11vw;
+    height: 3.3vw;
+    background-color:  rgb(65, 65, 65);
+    color: white;
+    box-shadow: -3px 5px 2px rgba(25, 25, 25);
+    border-radius: 0.5vw;
+    border: 0.20vw solid #161616;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.nex{
+    position: absolute;
+    left: 50vw;
+    top: 52vw;
+    width: 11vw;
+    height: 3.3vw;
+    background-color:  rgb(65, 65, 65);
+    color: white;
+    box-shadow: -3px 5px 2px rgba(25, 25, 25);
+    border-radius: 0.5vw;
+    border: 0.20vw solid #161616;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+.pre:active{
+    box-shadow: inset -4px 4px 2px #161616;
+    font-size: 1vw;
+}
+.nex:active{
+    box-shadow: inset -4px 4px 2px #161616;
+    font-size: 1vw;
+}
+
+.p,.n{
+    font-size: 2vw;
+}
+
+#data{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 24vw;
+    left: 44vw;
+}
+.poke {
+    width: 76%; 
+    height: auto;
+    margin-left: 1vw;
+}
+#numero{
+    position: absolute;
+    top: 12.5vw;
+    right: 6.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+#name{
+    position: absolute;
+    top: 12.5vw;
+    right: -5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    color: rgb(33, 33, 33);
+}
