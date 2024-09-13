@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const API_URL = 'https://deckofcardsapi.com/api/deck/new/draw/?count=1';
     const cartaImg = document.getElementById('carta-img');
-    const nuevaCartaBtn = document.getElementById('nueva-carta');
+    const nuevaCartaBtn = document.getElementById('nueva_carta');
     const opcionesDiv = document.getElementById('opciones');
     const resultadoDiv = document.getElementById('resultado');
 

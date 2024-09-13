@@ -10,6 +10,10 @@ body {
 #container {
     width: 60%;
     margin: 0 auto;
+    background-image: url(./img/fondo1.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vw;
 }
 
 button {
@@ -39,4 +43,9 @@ button {
 #resultado {
     font-size: 20px;
     font-weight: bold;
+}
+
+#nueva_carta{
+    border-radius: 2vw;
+    background-color: rgb(23, 192, 23);
 }
