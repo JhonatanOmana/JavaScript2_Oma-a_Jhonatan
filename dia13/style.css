@@ -1,88 +1,42 @@
-#cards {
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+#carta-mostrada img {
+    width: 150px;
+    height: auto;
+}
+
+#opciones {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
-.card {
+
+#opciones img {
     width: 100px;
-    height: 150px;
-    border: 1px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 140px;
+    cursor: pointer;
+}
+
+#resultado {
     font-size: 20px;
-    text-align: center;
-}
-
-body{
-    background-color: rgb(4, 58, 4);
-}
-#container{
-    position: absolute;
-    margin-top: -1.6vw;
-    margin-left: -0.8vw;
-    display: flex;
-    width: 99vw;
-    height: 100vw;
-    background: rgb(1,55,0);
-    background: linear-gradient(90deg, rgba(1,55,0,1) 0%, rgb(34, 85, 9) 35%, rgb(27, 126, 10) 100%);
-    
-}
-
-h1{
-    color: aliceblue;
-    border: 3px solid black;
-    font-size: 4vw;
-
-}
-
-#a,#b,#c,#d,#e,#f,#g,#h,#i,#j{
-    margin-top: 9vw;
-    width: 8vw;
-    height: 13vw;
-    border-radius: 1vw;
-    background-color: white;
-    justify-content: space-between;
-    grid-gap: 2vw;
-    margin-left: 1.7vw;
-    
-}
-
-#repartir{
-    position: absolute;
-    width: 8vw;
-    height: 13vw;
-    background-color: white;
-    border-radius: 1vw;
-    margin-top: 30vw;
-    margin-left: 89vw;
-}
-
-#titulo{
-    margin-left: 2vw;
-    width: 95vw;
-    height: 4vw;
-    position: absolute;
-
-}
-
-#cartas{
-    width: 4vw;
-    height: 2vw;
-    position: absolute;
-    margin-left: 91.3vw;
-    margin-top: 45vw;
-    border-radius: 1vw;
-    font-size: 0.6vw;
-}
-
-#reparte{
-    width: 8vw;
-    height: 13vw;
-}
-
-#p1,#p2,#p3,#p4,#p5,#p6,#p7,#p8,#p9,#p10{
-    width: 8vw;
-    height: 13vw;
-    
+    font-weight: bold;
 }
